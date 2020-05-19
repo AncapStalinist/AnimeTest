@@ -5,13 +5,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
-app.use(express.static(require('path').join(__dirname, 'public')));
+//app.use(express.static(require('path').join(__dirname, 'public')));
 
 app.set("view engine", "ejs");
 app.engine('html', require('ejs').renderFile);
 
 app.get("/", function (request, response){
-    response.sendFile(__dirname+'\\index.html');
+    response.sendFile(__dirname+'//index.html');
 });
 
 app.post("/result", urlencodedParser, function (request, response) {
@@ -103,7 +103,7 @@ app.post("/result", urlencodedParser, function (request, response) {
         text = " Рыночный Анархо-Комиссариат по результатам проведенного тестирования выявил, что вы ярый анимешник и специально отвечали на вопросы с целью изобразить их себя врага аниме, но на самом деле вы наверняка его самый пламенный союзник. Направьте результаты тестирования одному из вождей-антианимешников для того, чтобы вам было назначено лечение и соответвующий курс препаратов.";
     if (latent > 0 && anime > 0)
         text = " Рыночный Анархо-Комиссариат по результатам проведенного тестирования выявил, что вы проходили тест нечестно. Просим повторно перепройти тестирование.";
-    response.render(__dirname+'\\result.html', {
+    response.render(__dirname+'//result.html', {
         text: text
     });
 });
