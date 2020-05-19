@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Тест на анимешника</title>
+        <style>
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed,
+            figure, figcaption, footer, header, hgroup,
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+              margin: 0;
+            	padding: 0;
+            	border: 0;
+            	font-size: 100%;
+            	font: inherit;
+            	vertical-align: baseline;
+            }
+
+            :focus {
+                outline: 0;
+            }
+
+            article, aside, details, figcaption, figure,
+            footer, header, hgroup, menu, nav, section {
+            	display: block;
+            }
+
+            body {
+            	line-height: 1;
+            }
+
+            ol, ul {
+            	list-style: none;
+            }
+
+            blockquote, q {
+            	quotes: none;
+            }
+
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+            	content: '';
+            	content: none;
+            }
+
+            table {
+            	border-collapse: collapse;
+            	border-spacing: 0;
+            }
+
+            input[type=search]::-webkit-search-cancel-button,
+            input[type=search]::-webkit-search-decoration,
+            input[type=search]::-webkit-search-results-button,
+            input[type=search]::-webkit-search-results-decoration {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
+            input[type=search] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+            }
+
+            textarea {
+                overflow: auto;
+                vertical-align: top;
+                resize: vertical;
+            }
+
+            audio,
+            canvas,
+            video {
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                max-width: 100%;
+            }
+
+            audio:not([controls]) {
+                display: none;
+                height: 0;
+            }
+
+            [hidden] {
+                display: none;
+            }
+
+            html {
+                font-size: 100%; 
+                -webkit-text-size-adjust: 100%; 
+                -ms-text-size-adjust: 100%; 
+            }
+
+            a:focus {
+                outline: thin dotted;
+            }
+
+            a:active,
+            a:hover {
+                outline: 0;
+            }
+
+            img {
+                border: 0; 
+                -ms-interpolation-mode: bicubic; 
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            form {
+                margin: 0;
+            }
+
+            fieldset {
+                border: 1px solid #c0c0c0;
+                margin: 0 2px;
+                padding: 0.35em 0.625em 0.75em;
+            }
+
+            legend {
+                border: 0; 
+                padding: 0;
+                white-space: normal;
+                *margin-left: -7px;
+            }
+
+            button,
+            input,
+            select,
+            textarea {
+                font-size: 100%;
+                margin: 0; 
+                vertical-align: baseline; 
+                *vertical-align: middle; 
+            }
+
+            button,
+            input {
+                line-height: normal;
+            }
+
+            button,
+            select {
+                text-transform: none;
+            }
+
+            button,
+            html input[type="button"], 
+            input[type="reset"],
+            input[type="submit"] {
+                -webkit-appearance: button; 
+                cursor: pointer;
+                *overflow: visible; 
+            }
+
+            button[disabled],
+            html input[disabled] {
+                cursor: default;
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                box-sizing: border-box; 
+                padding: 0;
+                *height: 13px; 
+                *width: 13px;
+            }
+
+
+            input[type="search"] {
+                -webkit-appearance: textfield; 
+                -moz-box-sizing: content-box;
+                -webkit-box-sizing: content-box; 
+                box-sizing: content-box;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button,
+            input[type="search"]::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+
+            button::-moz-focus-inner,
+            input::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            textarea {
+                overflow: auto;
+                vertical-align: top; 
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            html,
+            button,
+            input,
+            select,
+            textarea {
+                color: #222;
+            }
+
+
+            ::-moz-selection {
+                background: #b3d4fc;
+                text-shadow: none;
+            }
+            
+            ::selection {
+                background: #b3d4fc;
+                text-shadow: none;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            
+            fieldset {
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+            
+            textarea {
+                resize: vertical;
+            }
+            
+            .chromeframe {
+                margin: 0.2em 0;
+                background: #ccc;
+                color: #000;
+                padding: 0.2em 0;
+            }
+        </style>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                user-select: none;
+            }
+
+            h1 {
+                text-align: center;
+                font-weight: 700;
+                font-size: xx-large;
+                margin: 1% 0;
+            }
+
+            div {
+                margin: 2%;
+            }
+
+            input {
+                margin: 1% 0 0 1%;
+            }
+
+            label {
+                margin: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Тест на анимешника</h1>
+        <form action="/result" method="post">
+            <div>
+                <p>1. Верно ли данное утверждение: "Я никогда не смотрел анимэ"</p>
+                <p><input type="radio" name="1" value="11" id="11" required> <label for="11">Верно, не смотрел</label></p>
+                <p><input type="radio" name="1" value="12" id="12" required> <label for="12">Смотрел только в детстве</label></p>
+                <p><input type="radio" name="1" value="13" id="13" required> <label for="13">Неверно, смотрел и смотрю</label></p>
+                <p><input type="radio" name="1" value="14" id="14" required> <label for="14">Смотрел в сознательном возрасте, но уже не смотрю</label></p>
+            </div>
+            <div>
+                <p>2. Сколько названий анимэ вы знаете?</p>
+                <p><input type="radio" name="2" value="21" id="21" required> <label for="21">Не более трех</label></p>
+                <p><input type="radio" name="2" value="22" id="22" required> <label for="22">Более трех</label></p>
+                <p><input type="radio" name="2" value="23" id="23" required> <label for="23">Более десяти</label></p>
+                <p><input type="radio" name="2" value="24" id="24" required> <label for="24">Ни одного</label></p>
+            </div>
+            <div>
+                <p>3. Сколько имен аниме-героев вы знаете?</p>
+                <p><input type="radio" name="3" value="31" id="31" required> <label for="31">Не более пяти</label></p>
+                <p><input type="radio" name="3" value="32" id="32" required> <label for="32">Более пяти</label></p>
+                <p><input type="radio" name="3" value="33" id="33" required> <label for="33">Более пятнадцати</label></p>
+                <p><input type="radio" name="3" value="34" id="34" required> <label for="34">Ни одного</label></p>
+            </div>
+            <div>
+                <p>4. Когда вы последний раз смотрели аниме?</p>
+                <p><input type="radio" name="4" value="41" id="41" required> <label for="41">На течение месяца</label></p>
+                <p><input type="radio" name="4" value="42" id="42" required> <label for="42">В пределах последних двух лет</label></p>
+                <p><input type="radio" name="4" value="43" id="43" required> <label for="43">Больше чем год назад</label></p>
+                <p><input type="radio" name="4" value="44" id="44" required> <label for="44">Точно больше двух лет назад</label></p>
+                <p><input type="radio" name="4" value="45" id="45" required> <label for="45">Никогда</label></p>
+            </div>
+            <div>
+                <p>5. Вы лучше умрете, чем будете смотреть аниме?</p>
+                <p><input type="radio" name="5" value="51" id="51" required> <label for="51">Да</label></p>
+                <p><input type="radio" name="5" value="52" id="52" required> <label for="52">Нет</label></p>
+                <p><input type="radio" name="5" value="53" id="53" required> <label for="53">Я и без угрозы смертью готов смотреть аниме</label></p>
+            </div>
+            <div>
+                <p>6. Отметьте имена аниме-персонажей, которые вам известны по имени</p>
+                <p><input type="checkbox" name="6" value="61" id="61"> <label for="61">Наруто</label></p>
+                <p><input type="checkbox" name="6" value="62" id="62"> <label for="62">Саске</label></p>
+                <p><input type="checkbox" name="6" value="63" id="63"> <label for="63">Сейлор Мун</label></p>
+                <p><input type="checkbox" name="6" value="64" id="64"> <label for="64">Аска</label></p>
+                <p><input type="checkbox" name="6" value="65" id="65"> <label for="65">Лена из бесконечного лета</label></p>
+                <p><input type="checkbox" name="6" value="66" id="66"> <label for="66">Покемон</label></p>
+                <p><input type="checkbox" name="6" value="67" id="67"> <label for="67">Харухия Судзумия</label></p>
+                <p><input type="checkbox" name="6" value="68" id="68"> <label for="68">Укурухи</label></p>
+                <p><input type="checkbox" name="6" value="69" id="69"> <label for="69">Канеки</label></p>
+                <p><input type="checkbox" name="6" value="610" id="610"> <label for="610">Лайт Йегер</label></p>
+                <p><input type="checkbox" name="6" value="611" id="611"> <label for="611">Идзуку Мидория</label></p>
+                <p><input type="checkbox" name="6" value="612" id="612"> <label for="612">Мегумин</label></p>
+                <p><input type="checkbox" name="6" value="613" id="613"> <label for="613">Асуна Юки</label></p>
+            </div>
+            <div>
+                <p>7. Как часто вы как-либо контактируете с анимешниками?</p>
+                <p><input type="radio" name="7" value="71" id="71" required> <label for="71">Никогда</label></p>
+                <p><input type="radio" name="7" value="72" id="72" required> <label for="72">Время от времени приходится</label></p>
+                <p><input type="radio" name="7" value="73" id="73" required> <label for="73">Очень часто</label></p>
+                <p><input type="radio" name="7" value="74" id="74" required> <label for="74">Стараюсь общаться только с анимешниками</label></p>
+            </div>
+            <div>
+                <p>8. Как лучше смотреть анимэ?</p>
+                <p><input type="radio" name="8" value="81" id="81" required> <label for="81">Анимэ лучше не смотреть</label></p>
+                <p><input type="radio" name="8" value="82" id="82" required> <label for="82">С полным переводом</label></p>
+                <p><input type="radio" name="8" value="83" id="83" required> <label for="83">С оригинальной озвучкой и субтитрами</label></p>
+                <p><input type="radio" name="8" value="84" id="84" required> <label for="84">С оригинальной озвучкой, без субтитров</label></p>
+                <p><input type="radio" name="8" value="85" id="85" required> <label for="85">С воткнутыми в глаза и уши ножами, чтобы не слышать и не видеть этот кошмар</label></p>
+            </div>
+            <div>
+                <p>9. Выбери наиболее подходящее тебе определение аниме:</p>
+                <p><input type="radio" name="9" value="91" id="91" required> <label for="91">Это идеологически вредное, упадническое и дегенеративное псевдо"искусство" милитаристской агрессивной фашистской демилитаризованной японской монархической военщины и угроза всему прогрессивному человечеству, стремительно заражающая умы молодежи, находящиеся на службе у современной мировой реакции, аниме служит делу грядущего полного возрождения японского империализма и всему международному неофашисткому, неонацистскому и альтрайтному движению</label></p>
+                <p><input type="radio" name="9" value="92" id="92" required> <label for="92">Это японские мультики для детей какие-то</label></p>
+                <p><input type="radio" name="9" value="93" id="93" required> <label for="93">Это вид японской анимации, отличающийся типичными сюжетными линиями и особым стилем рисовки, характерными чертами которой являются непропорционально огромные глаза, упрощенное изображение бровей и носа и нереалистичные пропорции тела</label></p>
+                <p><input type="radio" name="9" value="94" id="94" required> <label for="94">Это наивысшее достижение современной культуры</label></p>
+            </div>
+            <div>
+                <p>10. Если бы Маркс и Энгельс жили бы сегодня, они бы осудили аниме?</p>
+                <p><input type="radio" name="10" value="101" id="101" required> <label for="101">Конечно бы осудили!</label></p>
+                <p><input type="radio" name="10" value="102" id="102" required> <label for="102">Какое бы им дело до аниме</label></p>
+                <p><input type="radio" name="10" value="103" id="103" required> <label for="103">Осудили? Да они бы его смотрели и пропагандировали!</label></p>
+            </div>
+            <div>
+                <p>11. Укажите все знакомые для вас термины</p>
+                <p><input type="checkbox" name="11" value="111" id="111"> <label for="111">Юри</label></p>
+                <p><input type="checkbox" name="11" value="112" id="112"> <label for="112">Хентай</label></p>
+                <p><input type="checkbox" name="11" value="113" id="113"> <label for="113">Яой </label></p>
+                <p><input type="checkbox" name="11" value="114" id="114"> <label for="114">Тян </label></p>
+                <p><input type="checkbox" name="11" value="115" id="115"> <label for="115">Кун </label></p>
+                <p><input type="checkbox" name="11" value="116" id="116"> <label for="116">Эччи </label></p>
+                <p><input type="checkbox" name="11" value="117" id="117"> <label for="117">Яндере</label></p>
+                <p><input type="checkbox" name="11" value="118" id="118"> <label for="118">Цудере</label></p>
+                <p><input type="checkbox" name="11" value="119" id="119"> <label for="119">Кудере</label></p>
+                <p><input type="checkbox" name="11" value="1110" id="1110"> <label for="1110">Отаку</label></p>
+                <p><input type="checkbox" name="11" value="1111" id="1111"> <label for="1111">Десу</label></p>
+            </div>
+            <div>
+                <p><input type="submit" value="Подтвердить и отправить результаты на проверку"></p>
+            </div>
+        </form>
+    </body>
+</html>
