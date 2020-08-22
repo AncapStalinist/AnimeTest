@@ -89,6 +89,8 @@ app.post("/result", urlencodedParser, function (request, response) {
     }
     buf = Math.round(buf);
     anime+=buf;
+    if (anime < 10 && anti > 0) anime--;
+    if (anime == anti) anti++;
     var text;
     if (anime < 19 && anime > 7 && anime>=anti) 
         text = " Посмотреть результат: https://discord.gg/TEGRQm9 ";
