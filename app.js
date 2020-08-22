@@ -110,7 +110,7 @@ app.post("/result", urlencodedParser, function (request, response) {
         text = " Посмотреть результат: https://discord.gg/AM5P4uj ";
     if (latent > 0 && anime > 2)
         text = " Рыночный Анархо-Комиссариат по делам аниме по результатам проведенного тестирования выявил, что вы проходили тест нечестно или не совсем внимательно. Просим повторно перепройти тестирование.";
-    if ( anime < -1 && anti = 9)
+    if ( anime < -1 && anti == 9)
         text = " Посмотреть результат: https://discord.gg/GSAaJDw ";
     if (anime > 28)
         text = " Посмотреть результат: https://discord.gg/2uPcX35 ";
