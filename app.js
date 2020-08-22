@@ -23,11 +23,11 @@ app.post("/result", urlencodedParser, function (request, response) {
     if (data["1"]==11) { anime+=2; latent+=2; }
     if (data["1"]==13) { anti--; anime++; }
     if (data["1"]==14) { anti++; anime++; }
-    if (data["2"]==21) anti++;
+    if (data["2"]==21) anime--;
     if (data["2"]==22) anime++;
     if (data["2"]==23) anime+=2;
     if (data["2"]==24) latent++;
-    if (data["3"]==31) anti++;
+    if (data["3"]==31) anime--;
     if (data["3"]==32) anime++;
     if (data["3"]==33) anime+=2;
     if (data["3"]==34) latent++;
@@ -61,7 +61,7 @@ app.post("/result", urlencodedParser, function (request, response) {
     if (data["7"]==72) anti--; 
     if (data["7"]==73) anime++;
     if (data["7"]==74) { anti--; anime+=2; }
-    if (data["8"]==81) { anime--; anti++; }
+    if (data["8"]==81) { anime-=2; }
     if (data["8"]==82) anime++;
     if (data["8"]==83) anime+=2;
     if (data["8"]==84) anime+=3;
@@ -108,7 +108,7 @@ app.post("/result", urlencodedParser, function (request, response) {
         text = " Посмотреть результат: https://discord.gg/45W76H6 ";
     if (latent > 3)
         text = " Посмотреть результат: https://discord.gg/AM5P4uj ";
-    if (latent > 0 && anime > 2)
+    if (latent > 0 && anime > 8)
         text = " Рыночный Анархо-Комиссариат по делам аниме по результатам проведенного тестирования выявил, что вы проходили тест нечестно или не совсем внимательно. Просим повторно перепройти тестирование.";
     if ( anime < -1 && anti == 9)
         text = " Посмотреть результат: https://discord.gg/GSAaJDw ";
